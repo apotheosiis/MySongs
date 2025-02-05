@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySongs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MySongs 🎵</h1>
+
+        <!-- Campo de busca -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Digite o nome da música...">
+            <button onclick="buscarMusica()">🔍 Buscar</button>
+        </div>
+
+        <!-- Lista de músicas encontradas -->
+        <h2>Resultados</h2>
+        <ul id="resultados"></ul>
+
+        <!-- Playlist do usuário -->
+        <h2>Minha Playlist</h2>
+        <ul id="playlist"></ul>
+
+        <!-- Botão para baixar a playlist -->
+        <button class="download-btn" onclick="baixarPlaylist()">⬇️ Baixar Playlist</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
